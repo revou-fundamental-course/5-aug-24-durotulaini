@@ -1,0 +1,156 @@
+
+/* css/styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eefcff;
+    margin: 0;
+    padding: 0;
+    justify-content: left;
+    align-items: center;
+    margin: 15px;
+    
+}
+main{
+    display: flex;
+}
+header{
+    position: relative;   
+    height: 50px;        
+    
+    
+}
+h1 {
+    background: linear-gradient(to right, #5C9EAD, #A8D5BA, #FFA07A);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center; 
+    margin: 0; 
+    position: absolute; 
+    top: 0; 
+    left: 50%; 
+    transform: translateX(-50%);
+    
+}
+article{
+    font-family:  'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-size: large;
+    line-height: 1.7;
+}
+form{
+    background-color: #A8D5BA;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 10px;
+    width: 80%;
+    display: inline-block; 
+    text-align: left;   
+    position: relative; 
+     
+    
+}
+.keterangan{
+    width: 500px;
+}
+
+
+h1 {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+
+input[type="number"] {
+    width: 93%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+button {
+    width: 48%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="reset"] {
+    background-color: #dc3545;
+}
+
+#bmiResult {
+    background-color: #A8D5BA;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 30px;
+}
+
+#bmiValue{
+    font-size: 27px;
+}
+#solusi {
+    font-family:  'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-size: large;
+    width: 500px;
+    line-height: 1.7;
+}
+
+.hubungi{
+    background-color: #A8D5BA;
+    padding: 10px;
+}
+footer{
+    font-family:  'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-size: large;
+    line-height: 1.7;
+    position: relative;   
+    height: 50px;        
+    text-align: center;
+    
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    aside {
+        margin: 0;
+        min-width: 100%;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+    
+    #bmiForm label,
+    #bmiForm input,
+    #bmiForm button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #bmiForm input,
+    #bmiForm button {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+    .keterangan {
+        font-size: 0.9rem;
+    }
+}
